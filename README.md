@@ -1,55 +1,183 @@
-# Try Out Development Containers: Rust
+# Advent of Code 2019
 
-This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
+- [Advent of Code 2019](#advent-of-code-2019)
+  - [Introduction](#introduction)
+  - [December 1](#december-1)
+  - [December 2](#december-2)
+  - [December 3](#december-3)
+  - [December 4](#december-4)
+  - [December 5](#december-5)
+  - [December 6](#december-6)
+  - [December 7](#december-7)
+  - [December 8](#december-8)
+  - [December 9](#december-9)
+  - [December 10](#december-10)
+  - [December 11](#december-11)
+  - [December 12](#december-12)
+  - [December 13](#december-13)
+  - [December 14](#december-14)
+  - [December 15](#december-15)
+  - [December 16](#december-16)
+  - [December 17](#december-17)
+  - [December 18](#december-18)
+  - [December 19](#december-19)
+  - [December 20](#december-20)
+  - [December 21](#december-21)
+  - [December 22](#december-22)
+  - [December 23](#december-23)
+  - [December 24](#december-24)
+  - [December 25](#december-25)
 
-> **Note:** If you're following the quick start, you can jump to the [Things to try](#things-to-try) section. 
+## Introduction
 
-## Setting up the development container
+Copied the starter project from Microsoft for building a rust remote container.  Going to try and copy the problems here to (eventually) solve them all in rust.
 
-Follow these steps to open this sample in a container:
+## December 1
 
-1. If this is your first time using a development container, please follow the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
+### Question <!-- omit in toc -->
 
-2. **Linux users:** Update `USER_UID` and `USER_GID` in `.devcontainer/Dockerfile` with your user UID/GID if not 1000 to avoid creating files as root.
+### Answer <!-- omit in toc -->
 
-3. If you're not yet in a development container:
-   - Clone this repository.
-   - Press <kbd>F1</kbd> and select the **Remote-Containers: Open Folder in Container...** command.
-   - Select the cloned copy of this folder, wait for the container to start, and try things out!
+## December 2
 
-## Things to try
+### Question <!-- omit in toc -->
 
-Once you have this sample opened in a container, you'll be able to work with it like you would locally.
+### Answer <!-- omit in toc -->
 
-> **Note:** This container runs as a non-root user with sudo access by default. Comment out `"-u", "vscode"` in `.devcontainer/devcontainer.json` if you'd prefer to run as root.
+## December 3
 
-Some things to try:
+### Question <!-- omit in toc -->
 
-1. **Edit:**
-   - Open `main.rs`
-   - Try adding some code and check out the language features.
-1. **Terminal:** Press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\`</kbd> and type `uname` and other Linux commands from the terminal window.
-1. **Build, Run, and Debug:**
-   - Open `main.rs`
-   - Add a breakpoint (e.g. on line 8).
-   - Press <kbd>F5</kbd> to launch the app in the container.
-   - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
- 
-## Contributing
+### Answer <!-- omit in toc -->
 
-This project welcomes contributions and suggestions. Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+## December 4
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+### Question <!-- omit in toc -->
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+### Answer <!-- omit in toc -->
 
-## License
+## December 5
 
-Copyright © Microsoft Corporation All rights reserved.<br />
-Licensed under the MIT License. See LICENSE in the project root for license information.
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 6
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 7
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 8
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 9
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 10
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 11
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 12
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 13
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 14
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 15
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 16
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 17
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 18
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 19
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 20
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 21
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 22
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 23
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 24
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
+
+## December 25
+
+### Question <!-- omit in toc -->
+
+### Answer <!-- omit in toc -->
