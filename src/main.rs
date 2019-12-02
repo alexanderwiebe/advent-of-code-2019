@@ -13,7 +13,8 @@ fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
     let input: String  = fs::read_to_string("day01/input.data")?.parse()?;
     let v: Vec<u32> = input.lines().map(|x| x.parse::<u32>().unwrap()).collect();
 
-    let w:u32 = v.iter().map(|x| day01::day01::mass_to_fuel(*x)).sum();
+    // let w:u32 = v.iter().map(|x| day01::day01::mass_to_fuel(*x)).sum();
+    let w:u32 = v.iter().map(|x| day01::day01::mass_to_fuel_rec(*x, 0)).sum();
 
     println!("{}", w);
     println!("took {} us", now.elapsed().as_micros());
