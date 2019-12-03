@@ -8,4 +8,7 @@ path ="./src/lib/lib.rs"
 
 [dependencies.day01]
 path = "day01"
+
+[dependencies.day02]
+path = "day02"
  

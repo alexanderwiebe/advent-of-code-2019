@@ -5,9 +5,14 @@ name = "day01"
 version = "0.1.0"
 
 [[package]]
+name = "day02"
+version = "0.1.0"
+
+[[package]]
 name = "hello_remote_world"
 version = "0.1.0"
 dependencies = [
  "day01 0.1.0",
+ "day02 0.1.0",
 ]
 
