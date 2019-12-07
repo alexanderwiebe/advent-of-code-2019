@@ -18,7 +18,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
 
     println!("read in");
 
-    let mut origin = day03::day03::Point { x: 0, y: 0 };
+    let mut origin = day03::day03::Point { x: 0, y: 0, steps : 0 };
     let mut points1: Vec<day03::day03::Point> = vec![];
     for i in v1 {
         let points = day03::day03::take_steps(i, origin);
@@ -27,7 +27,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
     }
     println!("created points on v1");
 
-    origin = day03::day03::Point { x: 0, y: 0 };
+    origin = day03::day03::Point { x: 0, y: 0, steps : 0 };
     let mut points2: Vec<day03::day03::Point> = vec![];
     for i in v2 {
         let points = day03::day03::take_steps(i, origin);
@@ -39,11 +39,12 @@ fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
     
     let intersection = day03::day03::find_intersection(points1, points2);
     println!("found intersections");
+    println!("shortest path {}", intersection);
 
-    let shortest = day03::day03::find_shortest_taxi(intersection);
+    // let shortest = day03::day03::find_shortest_taxi(intersection);
 
-    println!("shortest path is x: {}, y: {}", shortest.x, shortest.y);
-    println!("total distance is: {}", shortest.x.abs() + shortest.y.abs());
+    // println!("shortest path is x: {}, y: {}", shortest.x, shortest.y);
+    // println!("total distance is: {}", shortest.x.abs() + shortest.y.abs());
     println!("took {} us", now.elapsed().as_micros());
     Ok(())
 }

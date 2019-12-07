@@ -50,7 +50,8 @@ pub mod day03 {
     #[derive(PartialEq, PartialOrd, Copy, Clone)]
     pub struct Point {
         pub x: isize,
-        pub y: isize
+        pub y: isize,
+        pub steps: isize
     }
 
     pub fn take_steps(instruction: &str, origin: Point) -> Vec<Point> {
@@ -62,35 +63,40 @@ pub mod day03 {
 
         if direction == 'D' {
             for step in 1..(steps + 1) {
-                points.push(Point { x: origin.x, y: origin.y - step as isize });
+                points.push(Point { x: origin.x, y: origin.y - step as isize, steps: step as isize + origin.steps });
             }
         } else if direction == 'U' {
             for step in 1..(steps + 1) {
-                points.push(Point { x: origin.x, y: origin.y + step as isize });
+                points.push(Point { x: origin.x, y: origin.y + step as isize, steps: step as isize + origin.steps });
             }
         } else if direction == 'R' {
             for step in 1..(steps + 1) {
-                points.push(Point { x: origin.x + step as isize, y: origin.y });
+                points.push(Point { x: origin.x + step as isize, y: origin.y, steps: step as isize + origin.steps });
             }
         } else if direction == 'L' {
             for step in 1..(steps + 1) {
-                points.push(Point { x: origin.x - step as isize, y: origin.y });
+                points.push(Point { x: origin.x - step as isize, y: origin.y, steps: step as isize + origin.steps });
             }
         }
 
         return points;
     }
 
-    pub fn find_intersection(wire1: Vec<Point>, wire2: Vec<Point>) -> Vec<Point> {
-        let mut points: Vec<Point> = Vec::new();
+    pub fn find_intersection(wire1: Vec<Point>, wire2: Vec<Point>) -> isize {
+        // let mut points: Vec<(Point, Point)> = Vec::new();
+        let mut lowest_steps = isize::max_value();
         for w1 in wire1.iter() {
             for w2 in wire2.iter() {
                 if w1.x == w2.x && w1.y == w2.y && (w1.y != 0 && w2.y != 0 && w1.x != 0 && w2.x != 0) {
-                    points.push(*w1);
+                    // points.push((*w1,*w2));
+                    if w1.steps + w2.steps < lowest_steps {
+                        lowest_steps = w1.steps + w2.steps;
+                    }
                 }
             }
         }
-        return points;
+        return lowest_steps;
+        // return points;
     }
 
     pub fn find_shortest_taxi(points: Vec<Point>) -> Point {
