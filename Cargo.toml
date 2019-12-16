@@ -6,14 +6,8 @@ authors = ["VS Code <vscode@microsoft.com>"]
 [lib]
 path ="./src/lib/lib.rs"
 
-[dependencies.day01]
-path = "day01"
-
-[dependencies.day02]
-path = "day02"
-
-[dependencies.day03]
-path = "day03"
-
-[dependencies.day04]
-path = "day04"
+[dependencies]
+day01.path = "day01"
+day02.path = "day02"
+day03.path = "day03"
+day04.path = "day04"
