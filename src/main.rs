@@ -10,8 +10,12 @@ use std::time::{Instant};
 fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
     let now = Instant::now();
 
-    let input: String  = fs::read_to_string("day02/input.data")?.parse()?;
+    let input: String  = fs::read_to_string("day05/input.data")?.parse()?;
+    let v: Vec<usize> = input.split(",").map(|x| x.parse::<usize>().unwrap()).collect();
 
+    let w = day05::day05::run_program(v, 0);
+
+    println!("{}", w[0]);
     println!("took {} us", now.elapsed().as_micros());
     Ok(())
 }
