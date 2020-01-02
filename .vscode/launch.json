@@ -12,7 +12,7 @@
                     "--no-run",
                     "--lib",
                     "--package",
-                    "day04"
+                    "day05"
                 ]
             },
             "program": "${cargo:program}",
